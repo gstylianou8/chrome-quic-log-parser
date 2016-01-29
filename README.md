@@ -1,65 +1,25 @@
-# chrome-http2-log-parser
+#chrome-quic-log-parser
 
-This repo contains a module for parsing the output of Chrome's HTTP/2
-net-internals and turning it into something more useful.
-
-## Installation
-
-```sh
-npm install chrome-http2-log-parser
-```
-
-### Try it
-
-```sh
-node test
-```
+This repo contains a module for parsing the output of Chrome's QUIC
+net-internals and turning it into something more useful. It is a modification of the repo 'chrome-htt2-log-parser'. 
 
 ## Usage
 
-Given a file `session.txt` gathered from `chrome://net-internals/#export` that contains the output of the Chrome
-HTTP/2 net-internals log, and given that it is a sibling of the file
-`report.js` that contains the following code:
+Given a file `sessionQUIC.txt` gathered from `chrome://net-internals` an html file is produced.
 
-```js
-var path = require('path');
+Run `node test ` to see the data parsed from the log.
 
-var parser = require('chrome-http2-log-parser');
-
-parser(path.resolve(__dirname, './session.txt'), {
-  reporters: [
-    'html'
-  ],
-  // the resolution, in milliseconds, of the report
-  interval: 20
-}, function (err, data) {
-  if (err) {
-    throw err;
-  }
-
-  // an array of objects representing the records in the log
-  console.log(data.records);
-
-  // an object with an property for each stream id; the value of
-  // the property is an array of objects associated with the stream id,
-  // in the order in which they appeared in the log
-  console.log(data.streams);
-
-  // the output of the html reporter
-  console.log(data.reports.html);
-});
-```
-
-Run `node report` to see the data parsed from the log.
-
-## Reporters
-
-### html
-
+## Changes - QUIC compatibility
 Generates an HTML table representing the parsed log data.
+It is important to note that the first column of the table can be either a stream Id or a packet number, according to the tag. 
+Stream id is specified by the QUIC_SESSION_STREAM_FRAME_SENT, the QUIC_SESSION_STREAM_FRAME_RECEIVED, the QUIC_HTTP_STREAM_SEND_REQUEST_HEADERS and the QUIC_SESSION_RST_STREAM_FRAME_SENT tags. A packet number is specified by the remaining tags. The QUIC_SESSION_ACK_FRAME_RECEIVED and the QUIC_SESSION_ACK_FRAME_SENT tags represent the largest observed packet number.
 
-Screenshot: ![image](https://cloud.githubusercontent.com/assets/39191/11483285/750a4ab0-975c-11e5-99ff-94820d8b5876.png)
+The changes from the original repo are:
+ - dataByTime.js: The QUIC_HTTP_STREAM_SEND_REQUEST_HEADERS is the only tag which has a 'path' field and therefore is the only one which is examined for that field. 
+ - markers.js: The different tags used to achieve QUIC compatibility are specified here. 
+ - parse.js: Each line in the 'txt' file is classified either as a start value, a key value or a header value and the appropriate actions are taken. In the case that a line is neither of these values, is simply ignored. 
+ Also, the streamId variable can be set to the value of stream_id, quic_stream_id, packet_number or largest_observed field, according to the tag. 
+ - html.jade: The HTTP tags are replaced with the ones specified in the markers.js file.
 
 ## TODO
-
-- Ability to run `chrome-http2-log-parser --file=<filename> --reporter=html --interval=5`
+Create two seperate tables, one for the streams and another one for the packets.
