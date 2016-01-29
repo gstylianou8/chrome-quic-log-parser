@@ -2,7 +2,7 @@ var path = require('path');
 
 var parser = require('../index');
 
-parser(path.resolve(__dirname, './fixtures/session.txt'), {
+parser(path.resolve(__dirname, './fixtures/sessionQUIC.txt'), {
   reporters: [
     'html'
     // 'text',

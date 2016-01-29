@@ -29,29 +29,38 @@ html
         border-bottom: 1px solid #ccc;
       }
 
-      .HTTP2_SESSION_SEND_HEADERS {
+      .QUIC_SESSION_STREAM_FRAME_SENT {
         background-color: cadetblue;
       }
 
-      .HTTP2_SESSION_RECV_HEADERS {
+      .QUIC_SESSION_STREAM_FRAME_RECEIVED {
         background-color: aqua;
       }
 
-      .HTTP2_SESSION_RECV_DATA {
+      .QUIC_HTTP_STREAM_SEND_REQUEST_HEADERS {
         background-color: gold;
       }
 
-      .HTTP2_SESSION_RECV_PUSH_PROMISE {
+      .QUIC_SESSION_RST_STREAM_FRAME_SENT {
         background-color: rebeccapurple;
         color: white;
       }
 
-      .HTTP2_STREAM_ADOPTED_PUSH_STREAM {
-        background-color: magenta;
+      .QUIC_SESSION_PACKET_SENT {
+        background-color: red;
       }
 
-      .OTHER {
+      .QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED {
+        background-color: cornflowerblue;
+      }
+
+      .QUIC_SESSION_ACK_FRAME_RECEIVED {
+        background-color: seagreen;
+      }
+
+      .QUIC_SESSION_ACK_FRAME_SENT {
         background-color: darkgray;
+        color: white;
       }
       
   body
@@ -62,10 +71,12 @@ html
           th(class=hdr)= m
           td= hdr
 
+    h3 NOTE: The first column of the array represents both streams and packets. ACKs represent the largest observed packet number. 
+
     table
       thead
         tr
-          th Stream ID
+          th Stream ID/ Packet Number
           th Path
           - var n = 0
           while n < data.entries
@@ -78,4 +89,6 @@ html
             each events, time in stream.events
               td.frame
                 each evt in events
-                  span(class=evt.e)= markers[evt.e] || markers.OTHER
+                  span(class=evt.e)= markers[evt.e] || markers.OTHER   
+
+    

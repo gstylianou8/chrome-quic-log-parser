@@ -1,0 +1,329 @@
+t=1597031 [st=    0] +QUIC_SESSION  [dt=?]
+                      --> cert_verify_flags = 6
+                      --> host = "2969561.fls.doubleclick.net"
+                      --> is_https = true
+                      --> port = 443
+                      --> privacy_mode = false
+                      --> require_confirmation = false
+t=1597031 [st=    0]    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT
+                        --> CHLO<
+                              SNI : "2969561.fls.doubleclick.net"
+                              VER : 'Q025'
+                              CCS : 0x7B26E9E7E45C71FF
+                              MSPC: 100
+                              UAID: "Chrome/47.0.2526.111 Linux x86_64"
+                              TCID: 0x00000000
+                              PDMD: 'X509'
+                              SRBF: 1048576
+                              ICSL: 30
+                              SCLS: 0x01000000
+                              COPT: 'FIXD'
+                              CFCW: 15728640
+                              SFCW: 6291456
+                            >
+t=1597031 [st=    0]    QUIC_SESSION_STREAM_FRAME_SENT
+                        --> fin = false
+                        --> length = 1300
+                        --> offset = "0"
+                        --> stream_id = 1
+t=1597031 [st=    0]    QUIC_SESSION_PACKET_SENT
+                        --> encryption_level = 0
+                        --> packet_number = "1"
+                        --> sent_time_us = "7500231811"
+                        --> size = 1350
+                        --> transmission_type = 0
+t=1597055 [st=   24]    QUIC_SESSION_PACKET_RECEIVED
+                        --> peer_address = "216.58.213.166:443"
+                        --> self_address = "194.80.39.105:49589"
+                        --> size = 1350
+t=1597055 [st=   24]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                        --> connection_id = "9412976087460118681"
+                        --> entropy_flag = 0
+                        --> fec_flag = 0
+                        --> fec_group = 0
+                        --> packet_number = "1"
+                        --> reset_flag = 0
+                        --> version_flag = 0
+t=1597055 [st=   24]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=1597055 [st=   24]    QUIC_SESSION_VERSION_NEGOTIATED
+                        --> version = "QUIC_VERSION_25"
+t=1597055 [st=   24]    QUIC_SESSION_VERSION_NEGOTIATED
+                        --> version = "QUIC_VERSION_25"
+t=1597055 [st=   24]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                        --> fin = false
+                        --> length = 1325
+                        --> offset = "0"
+                        --> stream_id = 1
+t=1597055 [st=   24]    QUIC_SESSION_PACKET_RECEIVED
+                        --> peer_address = "216.58.213.166:443"
+                        --> self_address = "194.80.39.105:49589"
+                        --> size = 1350
+t=1597055 [st=   24]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                        --> connection_id = "9412976087460118681"
+                        --> entropy_flag = 0
+                        --> fec_flag = 0
+                        --> fec_group = 0
+                        --> packet_number = "2"
+                        --> reset_flag = 0
+                        --> version_flag = 0
+t=1597055 [st=   24]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=1597055 [st=   24]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                        --> fin = false
+                        --> length = 920
+                        --> offset = "1325"
+                        --> stream_id = 1
+t=1597055 [st=   24]    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED
+                        --> REJ <
+                              STK : 0x5FE41A25FEC11F1885BA2CBF4E4F6893C9EC8344F2A667A6771B9E363CC64041D049FB2E8EAB32530AD3DB79BD3DFD232E355CEB178103D0A8F990B8
+                              SNO : 0x078CF60C9D16B46B6B2AD7D036B060FF51050E28D241CD696E86F5AB0E211FC1D349822DE2B502B5B09591665260501E682317DD4055CFF1
+                              PROF: 0x65FF8BAB9BAAA791EDA44F31AEEDAE4C325AD0F20639AAD6CB927904BF9C5477974D654F9A617F60EF4C0EECB3EC5A9A28D9233380398D4BCD3DCAFEF9044BF7D7A2CDB73597E0BECE2AD9087174FFC602025F829BA008DA78832A91A04B6DE52D70E1D5DF6DF0DCD86A9EF835D34154006EA777F463AB4F83309A8038787E4B9DB887FCAA4B49D25DF011C6D71C33A780DE54463187E55D5606D595D05FEFADFEC659DF8E0EBBEA1FFBFCE7E854C8D72641B0F6D9C9C7C0E6CB7B8FEA4D9DB30B7412C6DACE7D1812608F58560D88BCC60ABAADBB06253EB61DCFB2CDC1C5AC38E54E258CB7DA0B12F7EA3A80ADC926365995C5D328E237FF7ABB6CFCFCEE64
+                              SCFG: 
+                                SCFG<
+                                  AEAD: 'AESG','CC12','CC20'
+                                  SCID: 0xB98FFB9D759068B7F5F98E411640C126
+                                  PDMD: 'CHID'
+                                  PUBS: 0x200000E8C814A0EA51FD4B567CE4AC0AADE5825D84200C46554AC00DD90D57DA8ABE54
+                                  KEXS: 'C255'
+                                  OBIT: 0x3383C12DBBB9EE58
+                                  EXPY: 0x80ABAA5600000000
+                                >
+                              RREJ: 0x0C000000
+                              CRT : 0x0101037B26E9E7E45C71FF00000000006209000078BB8146C01F4B636500965CAC49064D2C5E9006150797167F7EA3ECDF39C8C51137B038F2442D8DA009860B9860F2F3D3735241E9D550D54019923664E0824067E6A596200A070577237061606A086C4001DB51E646E02C6566600CCC3C901C66908DD52A0E1E2E6760BA49CB2FCACB4C842548761E5EDFFCD2BC1250EA0ACB4C2D87BB8B07D95DD034C0CC23A8A597925F9A94939A9C93999CAD077419C1F27CE7D5F5A9DFF477C8EB885F547BB94DABD65F7E5DDFCC2B4EB36CDD4ED46E39E8F84E6E43B57768A275D295B9C68F450ECCA93EEDE6F3FC6873E9A70F6BBE152804997E3B216C7A2D6BBF4DE14EB667A7C513ADCE2D744DDFE4FFEE50AADEC98C5B2C6B66BE5EA5195D7DC4C2F75F8678D1BD3CB99C0BFEE9ECE9DB5AB9FED5DFE7787A74E7AE2436F6C4DFF93612FF1669D7CC659DFFAD6DC3C4E25711E112DF3CDDA7FF7EA829B36441FFD422A63E069D66F6F5F58D9B2F3DE50E11FBFC744FF83BD1699E0ED766FA793E65F813B9AAB9FCB4FBF4980BCFE7FD2D5AED9592C3B57ECA2C0DD5D732EDA6D39574264DCA7BF3AD934F2C538F71EF8A0DC94FD9574B2425C5D83836C91C67E2E91386B4BC9A98B4808D6E35420572E37790BC204BE37B83C6374D98A1DDC4A5A567949B9207668B68E9259662A8E0D6D24B4ED64D01E748909294540C2568E682148A6AE9A5E51463A804EA4F2BC2269A55804DB4341B43543431452F371F43981F3D196520950031C034AC8D94B7E5A1D9AD203B1398A541A9129CA3DD3D1DDD8DC099571BA9B88029061A9D9A57526C88AC03548420B527AE0B9EABB1F9FECB2420E56BA8FBD79CDECDF7B399D1EA54E462C1EB2E9B98F49E6F195BCBBE366EDB9D24B52BAA51DF40115249017308502717B8D4BF56C9C4CA68C0C1C696DEC8032C110C0C20B5AAA681BA81EA02E5058A84FC9383567480DB4F398112798A3513F72FBCDE7465B7EE95FDC6F374CF65982ABC58B45DF5F28FC86BD6EFBD62BCEE1B72FEB2F8FFCDE1C8FB75874333FEEDE94F9AFA3F4C3EF3C6EA9787CF5644BC13999332AFDBEC8FC3EF9FBF18E55F245F3B6F7F31895BF3CDA41AF7ACE224F7C5DBFF34E63F89BB7E31E355B198987B52C24AE5ABF6CAD54F7442AEFCFBF22183372BEFE68B8D7E1A299633456FBCE70D5E74E4C5D14366EBDD1744ADBB20EC6C237AE19443CCBB96D3CF36D7447114899D6191BF7F50FD78E573698F55EC311D41D676CFF9B6F504EAF0DEBCE1BAE9CB861997CC157FBD3D107B7BD5B4197C5B34548C8B3EBDD1BCDA7873BBF0EE1B36BE5F7CD544CCC5FBE55E2BD9265FB4BCD3F25548AE74CD17665049CBFC01988B6E40BBAE4C56CDE8852C35BA9272E0168A898129B08C3535350397AE8646C640646A696A1945CD829C50D939478BA53CE646C0442BB6C54D0F6E0478ECE9B4FF285920D5E156F7A0FFE8C7CE738AEFA2FE25F26E3772E95C50C21DEC1FBAE45C53D2D477AF23E38F3D646D103A1237C57E4FB487C597E0EF2ACF7E4F7C297AE4FC9760DE2F5E7FE687DCABDDB7203BBFFDC08500790D0366875B1CC58139F5FFAD6C969BB3F5EDF51664795DAB72EFD9CF3F8685BFA75C4DF8ACE7B5DEE9D2E95747B2A4369D09BE2BEADD2D7F423251FEECDC1576C9DA2DA699A92D27248FBA29FD089EBAEF718397C031AD37BBA62B081EB79C29C0B2E04362D554D51EBFA0D247DBDE729C12F9734E296BB3DF7937E6E9D399EB0E6CBC57BDDED5F8FC2EBBC2EDF7BEA8AA1EE235ED9C3BF7379F6065A79CF9D1F57D4599D05EEB7383C6272839116BB71491AFB16654F44EAA1E5281A364A0602087548608413368BA5E71656E720AB82523042F17380CD8801413B0796D0AC9D97A06C016F302608BB94D05456312A221955E02E9BA80B3B738A4CC00B61FD1CA0C2CF97ED5AF950A67B3D29BDFC65DA9BB277BA4FE812A1BC35195DF2B4FE8E6D6DD9BDB94AAD3986C9266F732E810C796D3FADFE3675A65CD09A86A65EDA9BDA8E5D1729933A7E6D059D3F99F9BDE05DDCB887FC2D025AE30EDBB66EF2CDFD32BEEB59DE0CD0F6B67AE65B6BFF3ABB25651F2E7092BFDC0B29EE38E930AFB55CF99FFF0F261507E7FC45460DD03E586E21A5F13BD137913AE09C8CD6C29962AF8F43694EF9D38DBABF47746AF75EEA6B3DB7FEB3E54702F9AE1D96EE9CB66524A39391B4C9D722670DA4E7E99C2A9C4D7CA36FF50B1E2E567F10D4F7A5B95AC8A993726F4ADCB78F4C56EFAF30421CE0CB37B56D71E394F8D366F9CD428BFBBF7FADAA014B1F06937E34CEA4E98DE0000B6B8593A
+                            >
+t=1597056 [st=   25]    QUIC_SESSION_CERTIFICATE_VERIFIED
+                        --> subjects = ["*.doubleclick.net","*.2mdn.net","*.au.doubleclick.net","*.cc-dt.com","*.de.doubleclick.net","*.doubleclick.com","*.fls.doubleclick.net","*.fr.doubleclick.net","*.jp.doubleclick.net","*.uk.doubleclick.net","ad.mo.doubleclick.net","doubleclick.net"]
+t=1597056 [st=   25]    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT
+                        --> CHLO<
+                              SNI : "2969561.fls.doubleclick.net"
+                              STK : 0x5FE41A25FEC11F1885BA2CBF4E4F6893C9EC8344F2A667A6771B9E363CC64041D049FB2E8EAB32530AD3DB79BD3DFD232E355CEB178103D0A8F990B8
+                              SNO : 0x078CF60C9D16B46B6B2AD7D036B060FF51050E28D241CD696E86F5AB0E211FC1D349822DE2B502B5B09591665260501E682317DD4055CFF1
+                              VER : 'Q025'
+                              CCS : 0x7B26E9E7E45C71FF
+                              NONC: 0x56A8B01B3383C12DBBB9EE5810725ED78A7899F914B3E0C18340E388D1CC06C5
+                              MSPC: 100
+                              AEAD: 'CC12'
+                              UAID: "Chrome/47.0.2526.111 Linux x86_64"
+                              SCID: 0xB98FFB9D759068B7F5F98E411640C126
+                              TCID: 0x00000000
+                              PDMD: 'X509'
+                              SRBF: 1048576
+                              ICSL: 30
+                              PUBS: 0xC7610723F180BB7825E6182661A9430FA9DBFC71BCEE255CCAFF1F7854167E78
+                              SCLS: 0x01000000
+                              KEXS: 'C255'
+                              COPT: 'FIXD'
+                              CCRT: 0x968CD626E2AD26E4E2631A827D71855F400B7B90A9AE79EB
+                              CETV: 0x8BAF66EF28D46F67A8FB629CF7C927502E5DA0B5CFF255D9B368AC136585BC48C3F021F103CF1F29B11FB19BF09742F0B0968EBDECE5E1B192A69D937491DD69B74E1BB08730BDB42417884350AEBF9CED6C5CEA81704A45689C724CF3673A9014CB074B24BDF7D44C9EF22D6F6FB3BBC348BBF21DAEB6B828FB312C565DC190325A484B054DA516B46E5C9A08559E35F1E6E80BC2C60C291275537AC86789304CD475FA
+                              CFCW: 15728640
+                              SFCW: 6291456
+                            >
+t=1597057 [st=   26]    QUIC_SESSION_ACK_FRAME_SENT
+                        --> delta_time_largest_observed_us = "1798"
+                        --> entropy_hash = 2
+                        --> largest_observed = "1"
+                        --> missing_packets = []
+                        --> received_packet_times = [{"packet_number":1,"received":"7500255216"}]
+                        --> revived_packets = []
+                        --> truncated = false
+t=1597057 [st=   26]    QUIC_SESSION_STOP_WAITING_FRAME_SENT
+                        --> sent_info = {"least_unacked":"1"}
+t=1597057 [st=   26]    QUIC_SESSION_STREAM_FRAME_SENT
+                        --> fin = false
+                        --> length = 1024
+                        --> offset = "1300"
+                        --> stream_id = 1
+t=1597057 [st=   26]    QUIC_SESSION_PACKET_SENT
+                        --> encryption_level = 0
+                        --> packet_number = "2"
+                        --> sent_time_us = "7500257071"
+                        --> size = 1350
+                        --> transmission_type = 0
+t=1597069 [st=   38]    QUIC_SESSION_PACKET_RECEIVED
+                        --> peer_address = "216.58.213.166:443"
+                        --> self_address = "194.80.39.105:49589"
+                        --> size = 1350
+t=1597069 [st=   38]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                        --> connection_id = "9412976087460118681"
+                        --> entropy_flag = 0
+                        --> fec_flag = 0
+                        --> fec_group = 0
+                        --> packet_number = "3"
+                        --> reset_flag = 0
+                        --> version_flag = 0
+t=1597069 [st=   38]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=1597069 [st=   38]    QUIC_SESSION_ACK_FRAME_RECEIVED
+                        --> delta_time_largest_observed_us = "13784"
+                        --> entropy_hash = 2
+                        --> largest_observed = "1"
+                        --> missing_packets = []
+                        --> received_packet_times = [{"packet_number":1,"received":"7500233457"}]
+                        --> revived_packets = []
+                        --> truncated = false
+t=1597069 [st=   38]    QUIC_SESSION_STOP_WAITING_FRAME_RECEIVED
+                        --> sent_info = {"least_unacked":"2"}
+t=1597069 [st=   38]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                        --> fin = false
+                        --> length = 246
+                        --> offset = "2245"
+                        --> stream_id = 1
+t=1597069 [st=   38]    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED
+                        --> SHLO<
+                              STK : 0x51D865D67236E4DB8F43C7DD105B80B47F26ACDBFFCF1F71AFF9E5E09A9E8DFF85DD6F0F5767E06A07E8A82DA0FE979F8CE28CDFE4A8C58219BC
+                              VER : 'Q030','Q029','Q028','Q027','Q026','Q025'
+                              MSPC: 100
+                              SRBF: 3145728
+                              ICSL: 30
+                              CADR: [::ffff:c250:2769]:49589
+                              PUBS: 0x47DB1CBAC44D4F80039FC55BF6C58615D745049DABC24A77A0B82423F41A9416
+                              SCLS: 0x01000000
+                              CFCW: 1572864
+                              SFCW: 1048576
+                            >
+t=1597069 [st=   38]    QUIC_SESSION_ACK_FRAME_SENT
+                        --> delta_time_largest_observed_us = "542"
+                        --> entropy_hash = 10
+                        --> largest_observed = "3"
+                        --> missing_packets = []
+                        --> received_packet_times = [{"packet_number":2,"received":"7500255327"},{"packet_number":3,"received":"7500269443"}]
+                        --> revived_packets = []
+                        --> truncated = false
+t=1597070 [st=   39]    QUIC_SESSION_STOP_WAITING_FRAME_SENT
+                        --> sent_info = {"least_unacked":"2"}
+t=1597070 [st=   39]    QUIC_SESSION_PACKET_SENT
+                        --> encryption_level = 2
+                        --> packet_number = "3"
+                        --> sent_time_us = "7500270020"
+                        --> size = 40
+                        --> transmission_type = 0
+t=1597093 [st=   62]    QUIC_SESSION_PACKET_RECEIVED
+                        --> peer_address = "216.58.213.166:443"
+                        --> self_address = "194.80.39.105:49589"
+                        --> size = 32
+t=1597093 [st=   62]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                        --> connection_id = "9412976087460118681"
+                        --> entropy_flag = 0
+                        --> fec_flag = 0
+                        --> fec_group = 0
+                        --> packet_number = "4"
+                        --> reset_flag = 0
+                        --> version_flag = 0
+t=1597093 [st=   62]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=1597093 [st=   62]    QUIC_SESSION_ACK_FRAME_RECEIVED
+                        --> delta_time_largest_observed_us = "12432"
+                        --> entropy_hash = 14
+                        --> largest_observed = "3"
+                        --> missing_packets = []
+                        --> received_packet_times = [{"packet_number":2,"received":"7500247268"},{"packet_number":3,"received":"7500259904"}]
+                        --> revived_packets = []
+                        --> truncated = false
+t=1597093 [st=   62]    QUIC_SESSION_STOP_WAITING_FRAME_RECEIVED
+                        --> sent_info = {"least_unacked":"4"}
+t=1597126 [st=   95]    QUIC_HTTP_STREAM_SEND_REQUEST_HEADERS
+                        --> :authority: 2969561.fls.doubleclick.net
+                            :method: GET
+                            :path: /activityi;dc_pre=CIfDhMv3ycoCFaGG2wodqk8OuA;src=2969561;type=count861;cat=050et853;u7=event.aspx;ord=1;num=1587060806341.4692
+                            :scheme: https
+                            accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                            accept-encoding: gzip, deflate, sdch
+                            accept-language: en-GB,en;q=0.8,el;q=0.6
+                            cookie: [387 bytes were stripped]
+                            referer: https://www.eticketing.co.uk/muticketsandmembership/details/event.aspx?itemref=5861
+                            upgrade-insecure-requests: 1
+                            user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
+                            x-client-data: CKS2yQEI/ZXKAQ==
+                        --> quic_priority = 4
+                        --> quic_stream_id = 5
+t=1597126 [st=   95]    QUIC_SESSION_STREAM_FRAME_SENT
+                        --> fin = false
+                        --> length = 739
+                        --> offset = "0"
+                        --> stream_id = 3
+t=1597126 [st=   95]    QUIC_SESSION_PACKET_SENT
+                        --> encryption_level = 2
+                        --> packet_number = "4"
+                        --> sent_time_us = "7500326422"
+                        --> size = 764
+                        --> transmission_type = 0
+t=1597163 [st=  132]    QUIC_SESSION_PACKET_RECEIVED
+                        --> peer_address = "216.58.213.166:443"
+                        --> self_address = "194.80.39.105:49589"
+                        --> size = 29
+t=1597163 [st=  132]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                        --> connection_id = "9412976087460118681"
+                        --> entropy_flag = 0
+                        --> fec_flag = 0
+                        --> fec_group = 0
+                        --> packet_number = "5"
+                        --> reset_flag = 0
+                        --> version_flag = 0
+t=1597163 [st=  132]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=1597163 [st=  132]    QUIC_SESSION_ACK_FRAME_RECEIVED
+                        --> delta_time_largest_observed_us = "25312"
+                        --> entropy_hash = 30
+                        --> largest_observed = "4"
+                        --> missing_packets = []
+                        --> received_packet_times = [{"packet_number":4,"received":"7500316705"}]
+                        --> revived_packets = []
+                        --> truncated = false
+t=1597163 [st=  132]    QUIC_SESSION_STOP_WAITING_FRAME_RECEIVED
+                        --> sent_info = {"least_unacked":"4"}
+t=1597174 [st=  143]    QUIC_SESSION_PACKET_RECEIVED
+                        --> peer_address = "216.58.213.166:443"
+                        --> self_address = "194.80.39.105:49589"
+                        --> size = 879
+t=1597174 [st=  143]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                        --> connection_id = "9412976087460118681"
+                        --> entropy_flag = 0
+                        --> fec_flag = 0
+                        --> fec_group = 0
+                        --> packet_number = "6"
+                        --> reset_flag = 0
+                        --> version_flag = 0
+t=1597174 [st=  143]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=1597174 [st=  143]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                        --> fin = false
+                        --> length = 371
+                        --> offset = "0"
+                        --> stream_id = 3
+t=1597174 [st=  143]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                        --> fin = true
+                        --> length = 487
+                        --> offset = "0"
+                        --> stream_id = 5
+t=1597174 [st=  143]    QUIC_HTTP_STREAM_READ_RESPONSE_HEADERS
+                        --> :status: 200
+                            alt-svc: quic=":443"; ma=604800; v="30,29,28,27,26,25"
+                            alternate-protocol: 443:quic,p=1
+                            cache-control: private, max-age=0
+                            content-encoding: gzip
+                            content-length: 487
+                            content-type: text/html; charset=UTF-8
+                            date: Wed, 27 Jan 2016 11:55:10 GMT
+                            expires: Wed, 27 Jan 2016 11:55:10 GMT
+                            p3p: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+                            server: cafe
+                            strict-transport-security: max-age=21600
+                            x-content-type-options: nosniff
+                            x-xss-protection: 1; mode=block
+t=1597200 [st=  169]    QUIC_SESSION_ACK_FRAME_SENT
+                        --> delta_time_largest_observed_us = "25806"
+                        --> entropy_hash = 122
+                        --> largest_observed = "6"
+                        --> missing_packets = []
+                        --> received_packet_times = [{"packet_number":4,"received":"7500293326"},{"packet_number":5,"received":"7500363072"},{"packet_number":6,"received":"7500374517"}]
+                        --> revived_packets = []
+                        --> truncated = false
+t=1597200 [st=  169]    QUIC_SESSION_STOP_WAITING_FRAME_SENT
+                        --> sent_info = {"least_unacked":"5"}
+t=1597200 [st=  169]    QUIC_SESSION_PACKET_SENT
+                        --> encryption_level = 2
+                        --> packet_number = "5"
+                        --> sent_time_us = "7500400403"
+                        --> size = 43
+                        --> transmission_type = 0
+t=1626200 [st=29169]    QUIC_SESSION_CLOSED
+                        --> from_peer = false
+                        --> quic_error = 25 (QUIC_CONNECTION_TIMED_OUT)
+t=1626200 [st=29169]    QUIC_SESSION_CLOSED
+                        --> from_peer = false
+                        --> quic_error = 25 (QUIC_CONNECTION_TIMED_OUT)

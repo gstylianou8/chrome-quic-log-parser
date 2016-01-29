@@ -1,0 +1,237 @@
+t=62686 [st=    0] +QUIC_SESSION  [dt=?]
+                    --> cert_verify_flags = 6
+                    --> host = "www.chromium.org"
+                    --> is_https = true
+                    --> port = 443
+                    --> privacy_mode = false
+                    --> require_confirmation = false
+t=62690 [st=    4]    QUIC_SESSION_CERTIFICATE_VERIFIED
+                      --> subjects = ["misc.google.com","*.888googler.com","*.adgoogle.net","*.baselinestudy.com","*.campuslondon.com","*.certificate-transparency.org","*.chrome.com","*.chromecast.com","*.chromium.org","*.developer.google.com","*.developers.google.com","*.feedburner.com","*.flutterapp.com","*.gbc.beatthatquote.com","*.gerritcodereview.com","*.glass-community.com","*.globaledu.org","*.google.org","*.googleapps.com","*.googlecompare.co.uk","*.googleflights.net","*.googleforveterans.com","*.googletraveladservices.com","*.gsrc.io","*.hindiweb.com","*.hwgo.com","*.mfg-inspector.com","*.on.here","*.pagespeedmobilizer.com","*.personfinder.google.org","*.quickoffice.com","*.quoteproxy.beatthatquote.com","*.schemer.com","*.screenwisetrendspanel.com","*.shibboleth.tv","*.sidewalkinc.com","*.solveforx.com","*.staging.widevine.com","*.storage-nightly-test.googleusercontent.com","*.storage-staging-test.googleusercontent.com","*.storage-test-test.googleusercontent.com","*.support.google.com","*.thinkwithgoogle.ae","*.thinkwithgoogle.at","*.thinkwithgoogle.ch","*.thinkwithgoogle.cn","*.thinkwithgoogle.co.il","*.thinkwithgoogle.co.uk","*.thinkwithgoogle.co.za","*.thinkwithgoogle.com.au","*.thinkwithgoogle.com.br","*.thinkwithgoogle.com.hk","*.thinkwithgoogle.de","*.thinkwithgoogle.dk","*.thinkwithgoogle.es","*.thinkwithgoogle.fi","*.thinkwithgoogle.fr","*.thinkwithgoogle.it","*.thinkwithgoogle.jp","*.thinkwithgoogle.kr","*.thinkwithgoogle.no","*.thinkwithgoogle.ru","*.thinkwithgoogle.se","*.uat.widevine.com","*.verily.com","*.verilylifesciences.com","*.whatbrowser.org","*.widevine.com","*.womenwill.com","*.x.team","*.xn--9trs65b.com","*.youtubemobilesupport.com","*.zagat.com","888googler.com","adgoogle.net","baselinestudy.com","campuslondon.com","certificate-transparency.org","chrome.com","chromecast.com","chromium.org","clickserve.dartsearch.net","clickserve.eu.dartsearch.net","clickserve.uk.dartsearch.net","clickserve.us2.dartsearch.net","clickserver.googleads.com","cookiechoices.org","feedburner.com","flutterapp.com","gbc.beatthatquote.com","gerritcodereview.com","glass-community.com","globaledu.org","goog.dmtry.com","google.domains","google.org","googleapps.com","googlecompare.co.uk","googleflights.net","googletraveladservices.com","gsrc.io","hindiweb.com","hwgo.com","images.zagat.com","js.dmtry.com","mfg-inspector.com","n339.asp-cc.com","on.here","pagespeedmobilizer.com","ping.feedburner.google.com","quoteproxy.beatthatquote.com","schemer.com","screenwisetrendspanel.com","sidewalkinc.com","solveforx.com","thinkwithgoogle.ae","thinkwithgoogle.at","thinkwithgoogle.ch","thinkwithgoogle.cn","thinkwithgoogle.co.il","thinkwithgoogle.co.uk","thinkwithgoogle.co.za","thinkwithgoogle.com.au","thinkwithgoogle.com.br","thinkwithgoogle.com.hk","thinkwithgoogle.de","thinkwithgoogle.dk","thinkwithgoogle.es","thinkwithgoogle.fi","thinkwithgoogle.fr","thinkwithgoogle.it","thinkwithgoogle.jp","thinkwithgoogle.kr","thinkwithgoogle.no","thinkwithgoogle.ru","thinkwithgoogle.se","verily.com","verilylifesciences.com","whatbrowser.org","womenwill.com","www.cookiechoices.org","x.team","xn--9trs65b.com","youtubemobilesupport.com","zagat.com"]
+t=62691 [st=    5]    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT
+                      --> CHLO<
+                            SNI : "www.chromium.org"
+                            STK : 0x58E8C22FE006F865EBBAEDB95EAC0A4F73A222E1AF088C930AD0843957E0CE8DEFDEAEC9B6A895F268BD096C9F696B2B01426BEAC75A7DD00BA3
+                            VER : 'Q025'
+                            CCS : 0x7B26E9E7E45C71FF
+                            NONC: 0x56A7997C8B65FEA7BB48BFD2CEBEDBE4FBD98A4DB57255D2C92A0E6FFEBC3B48
+                            MSPC: 100
+                            AEAD: 'CC12'
+                            UAID: "Chrome/47.0.2526.111 Linux x86_64"
+                            SCID: 0x3584298FF886A4E48DC5D6627AE4AE05
+                            TCID: 0x00000000
+                            PDMD: 'X509'
+                            SRBF: 1048576
+                            ICSL: 30
+                            PUBS: 0xD24F357411724FA4E2454ABC60A67B35125CC83CE63BA45FA8B7561F87F4036A
+                            SCLS: 0x01000000
+                            KEXS: 'C255'
+                            COPT: 'FIXD'
+                            CCRT: 0xE02C5648FCAC45DFE2631A827D71855F400B7B90A9AE79EB
+                            IRTT: 30169
+                            CETV: 0x2DE47DD3184AD33F10B38A3D52C57725EF984F841E37EE3E41BEC8B9B23DF659E1EFB1AC6C95C4E8E55BE076657F3D13D0B1EAC2FBF8FF5F2255009CFAA0A959932C1E48686EA88749307115B388355F17F406E653BF67A7D4DC5E2472E33BE9A897701880B5AE80D00AC33462141F0CF79B3FB40BF3CA5EF9BE97BC53648D9865017C32D29A49FBB4DD5BFD1B0B1216EAEDECFED619FC80EAF2F2E96C36F9C347741666
+                            CFCW: 15728640
+                            SFCW: 6291456
+                          >
+t=62691 [st=    5]    QUIC_SESSION_STREAM_FRAME_SENT
+                      --> fin = false
+                      --> length = 1024
+                      --> offset = "0"
+                      --> stream_id = 1
+t=62691 [st=    5]    QUIC_SESSION_PACKET_SENT
+                      --> encryption_level = 0
+                      --> packet_number = "1"
+                      --> sent_time_us = "21403712216"
+                      --> size = 1350
+                      --> transmission_type = 0
+t=62712 [st=   26]    QUIC_SESSION_PACKET_RECEIVED
+                      --> peer_address = "216.239.32.27:443"
+                      --> self_address = "194.80.39.105:47371"
+                      --> size = 1350
+t=62712 [st=   26]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                      --> connection_id = "2239248360720025206"
+                      --> entropy_flag = 0
+                      --> fec_flag = 0
+                      --> fec_group = 0
+                      --> packet_number = "1"
+                      --> reset_flag = 0
+                      --> version_flag = 0
+t=62712 [st=   26]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=62712 [st=   26]    QUIC_SESSION_VERSION_NEGOTIATED
+                      --> version = "QUIC_VERSION_25"
+t=62712 [st=   26]    QUIC_SESSION_VERSION_NEGOTIATED
+                      --> version = "QUIC_VERSION_25"
+t=62712 [st=   26]    QUIC_SESSION_ACK_FRAME_RECEIVED
+                      --> delta_time_largest_observed_us = "452"
+                      --> entropy_hash = 2
+                      --> largest_observed = "1"
+                      --> missing_packets = []
+                      --> received_packet_times = [{"packet_number":1,"received":"21403707632"}]
+                      --> revived_packets = []
+                      --> truncated = false
+t=62712 [st=   26]    QUIC_SESSION_STOP_WAITING_FRAME_RECEIVED
+                      --> sent_info = {"least_unacked":"1"}
+t=62712 [st=   26]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                      --> fin = false
+                      --> length = 246
+                      --> offset = "0"
+                      --> stream_id = 1
+t=62712 [st=   26]    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED
+                      --> SHLO<
+                            STK : 0xACCEA948EFD43315821B956B622640BE7FA3A37524FACD44FFAC18A75006A6A67E88FA63729EF43510DF20FCE08ECB0F7FF671385D4894B4F1D0
+                            VER : 'Q030','Q029','Q028','Q027','Q026','Q025'
+                            MSPC: 100
+                            SRBF: 3145728
+                            ICSL: 30
+                            CADR: [::ffff:c250:2769]:47371
+                            PUBS: 0x3E9E461225F9084643FDC5FCA5236ABF812BB530FD85D839224FA069D2E3656B
+                            SCLS: 0x01000000
+                            CFCW: 1572864
+                            SFCW: 1048576
+                          >
+t=62713 [st=   27]    QUIC_SESSION_ACK_FRAME_SENT
+                      --> delta_time_largest_observed_us = "593"
+                      --> entropy_hash = 0
+                      --> largest_observed = "1"
+                      --> missing_packets = []
+                      --> received_packet_times = [{"packet_number":1,"received":"21403733848"}]
+                      --> revived_packets = []
+                      --> truncated = false
+t=62713 [st=   27]    QUIC_SESSION_STOP_WAITING_FRAME_SENT
+                      --> sent_info = {"least_unacked":"2"}
+t=62713 [st=   27]    QUIC_SESSION_PACKET_SENT
+                      --> encryption_level = 2
+                      --> packet_number = "2"
+                      --> sent_time_us = "21403734487"
+                      --> size = 37
+                      --> transmission_type = 0
+t=62713 [st=   27]    QUIC_HTTP_STREAM_SEND_REQUEST_HEADERS
+                      --> :authority: www.chromium.org
+                          :method: GET
+                          :path: /quic
+                          :scheme: https
+                          accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                          accept-encoding: gzip, deflate, sdch
+                          accept-language: en-GB,en;q=0.8,el;q=0.6
+                          cache-control: max-age=0
+                          cookie: [512 bytes were stripped]
+                          if-modified-since: Tue, 26 Jan 2016 16:00:05 GMT
+                          if-none-match: "1453824005761|#public|0|en_GB|||0"
+                          upgrade-insecure-requests: 1
+                          user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
+                      --> quic_priority = 4
+                      --> quic_stream_id = 5
+t=62713 [st=   27]    QUIC_SESSION_STREAM_FRAME_SENT
+                      --> fin = false
+                      --> length = 572
+                      --> offset = "0"
+                      --> stream_id = 3
+t=62713 [st=   27]    QUIC_SESSION_PACKET_SENT
+                      --> encryption_level = 2
+                      --> packet_number = "3"
+                      --> sent_time_us = "21403734888"
+                      --> size = 597
+                      --> transmission_type = 0
+t=62755 [st=   69]    QUIC_SESSION_PACKET_RECEIVED
+                      --> peer_address = "216.239.32.27:443"
+                      --> self_address = "194.80.39.105:47371"
+                      --> size = 32
+t=62755 [st=   69]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                      --> connection_id = "2239248360720025206"
+                      --> entropy_flag = 0
+                      --> fec_flag = 0
+                      --> fec_group = 0
+                      --> packet_number = "2"
+                      --> reset_flag = 0
+                      --> version_flag = 0
+t=62755 [st=   69]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=62755 [st=   69]    QUIC_SESSION_ACK_FRAME_RECEIVED
+                      --> delta_time_largest_observed_us = "25640"
+                      --> entropy_hash = 6
+                      --> largest_observed = "3"
+                      --> missing_packets = []
+                      --> received_packet_times = [{"packet_number":2,"received":"21403727110"},{"packet_number":3,"received":"21403727467"}]
+                      --> revived_packets = []
+                      --> truncated = false
+t=62755 [st=   69]    QUIC_SESSION_STOP_WAITING_FRAME_RECEIVED
+                      --> sent_info = {"least_unacked":"2"}
+t=62883 [st=  197]    QUIC_SESSION_PACKET_RECEIVED
+                      --> peer_address = "216.239.32.27:443"
+                      --> self_address = "194.80.39.105:47371"
+                      --> size = 207
+t=62883 [st=  197]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                      --> connection_id = "2239248360720025206"
+                      --> entropy_flag = 0
+                      --> fec_flag = 0
+                      --> fec_group = 0
+                      --> packet_number = "3"
+                      --> reset_flag = 0
+                      --> version_flag = 0
+t=62883 [st=  197]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=62883 [st=  197]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                      --> fin = false
+                      --> length = 186
+                      --> offset = "0"
+                      --> stream_id = 3
+t=62883 [st=  197]    QUIC_SESSION_STREAM_FRAME_RECEIVED
+                      --> fin = true
+                      --> length = 0
+                      --> offset = "0"
+                      --> stream_id = 5
+t=62883 [st=  197]    QUIC_HTTP_STREAM_READ_RESPONSE_HEADERS
+                      --> :status: 304
+                          alt-svc: quic=":443"; ma=604800; v="30,29,28,27,26,25"
+                          alternate-protocol: 443:quic,p=1
+                          date: Tue, 26 Jan 2016 16:06:23 GMT
+                          etag: "1453824005761|#public|0|en_GB|||0"
+                          last-modified: Tue, 26 Jan 2016 16:00:05 GMT
+                          server: GSE
+                          x-robots-tag: noarchive
+t=62884 [st=  198]    QUIC_SESSION_ACK_FRAME_SENT
+                      --> delta_time_largest_observed_us = "630"
+                      --> entropy_hash = 4
+                      --> largest_observed = "3"
+                      --> missing_packets = []
+                      --> received_packet_times = [{"packet_number":2,"received":"21403776387"},{"packet_number":3,"received":"21403904459"}]
+                      --> revived_packets = []
+                      --> truncated = false
+t=62884 [st=  198]    QUIC_SESSION_STOP_WAITING_FRAME_SENT
+                      --> sent_info = {"least_unacked":"4"}
+t=62884 [st=  198]    QUIC_SESSION_RST_STREAM_FRAME_SENT
+                      --> details = ""
+                      --> quic_rst_stream_error = 6 (QUIC_STREAM_CANCELLED)
+                      --> stream_id = 5
+t=62884 [st=  198]    QUIC_SESSION_PACKET_SENT
+                      --> encryption_level = 2
+                      --> packet_number = "4"
+                      --> sent_time_us = "21403905168"
+                      --> size = 57
+                      --> transmission_type = 0
+t=62925 [st=  239]    QUIC_SESSION_PACKET_RECEIVED
+                      --> peer_address = "216.239.32.27:443"
+                      --> self_address = "194.80.39.105:47371"
+                      --> size = 29
+t=62925 [st=  239]    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED
+                      --> connection_id = "2239248360720025206"
+                      --> entropy_flag = 0
+                      --> fec_flag = 0
+                      --> fec_group = 0
+                      --> packet_number = "4"
+                      --> reset_flag = 0
+                      --> version_flag = 0
+t=62926 [st=  240]    QUIC_SESSION_PACKET_AUTHENTICATED
+t=62926 [st=  240]    QUIC_SESSION_ACK_FRAME_RECEIVED
+                      --> delta_time_largest_observed_us = "26016"
+                      --> entropy_hash = 22
+                      --> largest_observed = "4"
+                      --> missing_packets = []
+                      --> received_packet_times = [{"packet_number":4,"received":"21403897724"}]
+                      --> revived_packets = []
+                      --> truncated = false
+t=62926 [st=  240]    QUIC_SESSION_STOP_WAITING_FRAME_RECEIVED
+                      --> sent_info = {"least_unacked":"4"}
+t=91926 [st=29240]    QUIC_SESSION_CLOSED
+                      --> from_peer = false
+                      --> quic_error = 25 (QUIC_CONNECTION_TIMED_OUT)
+t=91926 [st=29240]    QUIC_SESSION_CLOSED
+                      --> from_peer = false
+                      --> quic_error = 25 (QUIC_CONNECTION_TIMED_OUT)

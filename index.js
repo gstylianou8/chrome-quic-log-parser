@@ -4,7 +4,6 @@ var fs = require('fs');
 
 var parse = require('./lib/parse');
 var dataByTime = require('./lib/dataByTime');
-
 function doIt (file, opts, cb) {
   opts = opts || {};
 
@@ -12,7 +11,6 @@ function doIt (file, opts, cb) {
     if (err) {
       return cb(err);
     }
-
     if (opts.reporters) {
       let d = dataByTime(data.streams, opts.interval || 5);
       data.reports = {};
