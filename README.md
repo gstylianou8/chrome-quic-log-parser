@@ -1,11 +1,26 @@
 #chrome-quic-log-parser
 
 This repo contains a module for parsing the output of Chrome's QUIC
-net-internals and turning it into something more useful. It is a modification of the repo 'chrome-htt2-log-parser'. 
+net-internals and turning it into something more useful. It is a modification of the repo https://github.com/rmurphey/chrome-http2-log-parser. 
+
+
+## Requirements
+nodejs version >=4.2
+
+
+This installs the forked project and resolves the dependencies for this project (To be updated)
+```sh
+npm install chrome-http2-log-parser
+```
+
+Install jade
+```sh
+npm install jade
+```
 
 ## Usage
 
-Given a file `sessionQUIC.txt` gathered from `chrome://net-internals` an html file is produced.
+Given a file `sessionQUIC.txt` gathered from `chrome://net-internals` a html file is produced.
 
 Run `node test ` to see the data parsed from the log.
 
@@ -23,3 +38,5 @@ The changes from the original repo are:
 
 ## TODO
 Create two seperate tables, one for the streams and another one for the packets.
+
+Add this project onto npm.
