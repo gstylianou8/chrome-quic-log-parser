@@ -3,6 +3,8 @@
 This repo contains a module for parsing the output of Chrome's QUIC
 net-internals and turning it into something more useful. It is a modification of the repo https://github.com/rmurphey/chrome-http2-log-parser. 
 
+Screenshot: ![image](https://raw.githubusercontent.com/gstylianou8/chrome-quic-log-parser/master/screenshots/screenshot.png)
+
 
 ## Requirements
 nodejs version >=4.2
