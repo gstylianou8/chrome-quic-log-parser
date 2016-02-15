@@ -42,7 +42,7 @@ html
       }
 
       .QUIC_SESSION_RST_STREAM_FRAME_SENT {
-        background-color: rebeccapurple;
+        background-color: purple;
         color: white;
       }
 
@@ -71,12 +71,10 @@ html
           th(class=hdr)= m
           td= hdr
 
-    h3 NOTE: The first column of the array represents both streams and packets. ACKs represent the largest observed packet number. 
-
     table
       thead
         tr
-          th Stream ID/ Packet Number
+          th Stream ID
           th Path
           - var n = 0
           while n < data.entries
@@ -91,4 +89,22 @@ html
                 each evt in events
                   span(class=evt.e)= markers[evt.e] || markers.OTHER   
 
-    
+    br
+    br
+
+    table
+      thead
+        tr
+          th Packet No
+          - var n = 0
+          while n < data.entriesPack
+            th.frame= data.interval * n++
+      tbody
+        each packet, packetId in data.packets
+          tr
+
+            td= packetId
+            each events, time in packet.events
+              td.frame
+                each evt in events
+                  span(class=evt.e)= markers[evt.e] || markers.OTHER 

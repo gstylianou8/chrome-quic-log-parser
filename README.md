@@ -27,8 +27,8 @@ Given a file `sessionQUIC.txt` gathered from `chrome://net-internals` a html fil
 Run `node test ` to see the data parsed from the log.
 
 ## Changes - QUIC compatibility
-Generates an HTML table representing the parsed log data.
-It is important to note that the first column of the table can be either a stream Id or a packet number, according to the tag. 
+Generates two HTML tables representing the parsed log data.
+It is important to note that the first table represents the stream Ids and the second table represents the packet numbers. 
 Stream id is specified by the QUIC_SESSION_STREAM_FRAME_SENT, the QUIC_SESSION_STREAM_FRAME_RECEIVED, the QUIC_HTTP_STREAM_SEND_REQUEST_HEADERS and the QUIC_SESSION_RST_STREAM_FRAME_SENT tags. A packet number is specified by the remaining tags. The QUIC_SESSION_ACK_FRAME_RECEIVED and the QUIC_SESSION_ACK_FRAME_SENT tags represent the largest observed packet number.
 
 The changes from the original repo are:
@@ -39,6 +39,4 @@ The changes from the original repo are:
  - html.jade: The HTTP tags are replaced with the ones specified in the markers.js file.
 
 ## TODO
-Create two seperate tables, one for the streams and another one for the packets.
-
 Add this project onto npm.
