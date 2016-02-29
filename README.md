@@ -9,15 +9,9 @@ Screenshot: ![image](https://raw.githubusercontent.com/gstylianou8/chrome-quic-l
 ## Requirements
 nodejs version >=4.2
 
-
-This installs the forked project and resolves the dependencies for this project (To be updated)
+Installation
 ```sh
-npm install chrome-http2-log-parser
-```
-
-Install jade
-```sh
-npm install jade
+npm install chrome-quic-log-parser
 ```
 
 ## Usage
@@ -38,5 +32,4 @@ The changes from the original repo are:
  Also, the streamId variable can be set to the value of stream_id, quic_stream_id, packet_number or largest_observed field, according to the tag. 
  - html.jade: The HTTP tags are replaced with the ones specified in the markers.js file.
 
-## TODO
-Add this project onto npm.
+

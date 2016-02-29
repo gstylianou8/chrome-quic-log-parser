@@ -1,40 +1,28 @@
 {
-  "name": "chrome-http2-log-parser",
-  "version": "0.1.2",
-  "description": "Parse Chrome's http/2 net-internals logs",
+  "name": "chrome-quic-log-parser",
+  "version": "1.0.0",
+  "description": "A module for parsing the output of Chrome's QUIC net-internals and turning it into something more useful",
   "main": "index.js",
-  "engines": {
-    "node": ">=4.2"
+  "directories": {
+    "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "chrome",
-    "http2",
-    "http/2",
-    "net-internals"
-  ],
-  "author": {
-    "name": "Rebecca Murphey"
-  },
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rmurphey/chrome-http2-log-parser.git"
+    "url": "git+https://github.com/gstylianou8/chrome-quic-log-parser.git"
   },
+  "author": "George <giorgosstylianou92@gmail.com>",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rmurphey/chrome-http2-log-parser/issues"
+    "url": "https://github.com/gstylianou8/chrome-quic-log-parser/issues"
   },
-  "homepage": "https://github.com/rmurphey/chrome-http2-log-parser",
+  "homepage": "https://github.com/gstylianou8/chrome-quic-log-parser#readme",
   "dependencies": {
-    "jade": "^1.11.0"
-  },
-  "readme": "# chrome-http2-log-parser\n\nThis repo contains a module for parsing the output of Chrome's HTTP/2\nnet-internals and turning it into something more useful.\n\n## Installation\n\n```sh\nnpm install chrome-http2-log-parser\n```\n\n### Try it\n\n```sh\nnode test\n```\n\n## Usage\n\nGiven a file `session.txt` gathered from `chrome://net-internals/#export` that contains the output of the Chrome\nHTTP/2 net-internals log, and given that it is a sibling of the file\n`report.js` that contains the following code:\n\n```js\nvar path = require('path');\n\nvar parser = require('chrome-http2-log-parser');\n\nparser(path.resolve(__dirname, './session.txt'), {\n  reporters: [\n    'html'\n  ],\n  // the resolution, in milliseconds, of the report\n  interval: 20\n}, function (err, data) {\n  if (err) {\n    throw err;\n  }\n\n  // an array of objects representing the records in the log\n  console.log(data.records);\n\n  // an object with an property for each stream id; the value of\n  // the property is an array of objects associated with the stream id,\n  // in the order in which they appeared in the log\n  console.log(data.streams);\n\n  // the output of the html reporter\n  console.log(data.reports.html);\n});\n```\n\nRun `node report` to see the data parsed from the log.\n\n## Reporters\n\n### html\n\nGenerates an HTML table representing the parsed log data.\n\nScreenshot: ![image](https://cloud.githubusercontent.com/assets/39191/11483285/750a4ab0-975c-11e5-99ff-94820d8b5876.png)\n\n## TODO\n\n- Ability to run `chrome-http2-log-parser --file=<filename> --reporter=html --interval=5`\n",
-  "readmeFilename": "README.md",
-  "gitHead": "a56b814d729ef09026d76c15728f83f4356b52c3",
-  "_id": "chrome-http2-log-parser@0.1.2",
-  "_shasum": "ea33fbef003228bba1060f7dfce19814d13bc6f8",
-  "_from": "chrome-http2-log-parser",
-  "_resolved": "file:chrome-http2-log-parser"
+    "fs": "0.0.2",
+    "jade": "^1.11.0",
+    "path": "^0.12.7",
+    "readline": "^1.3.0"
+  }
 }
